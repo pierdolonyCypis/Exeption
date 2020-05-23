@@ -1,0 +1,142 @@
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.println(getDevide(-5,-6));
+        System.out.println(getMultiply(0, 50));
+        System.out.println(getMinus(0, 0));
+        System.out.println(getPlus(5, 10));
+
+
+    }
+
+    public static int getDevide(int a, int b) {
+        if (a < 0 & b < 0) {
+            try {
+                throw new IllegalArgumentException();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        if ((a == 0 & b != 0) | (a != 0 & b == 0)) {
+            try {
+                throw new ArithmeticException();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        if (a == 0 & b == 0) {
+            try {
+                throw new IllegalAccessException();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        if (a > 0 & b > 0) {
+            try {
+                throw new MyException("Помилка! числа не можуть бути більші за нуль");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return a / b;
+    }
+
+    public static int getMultiply(int a, int b) {
+        if (a < 0 & b < 0) {
+            try {
+                throw new IllegalArgumentException();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        if ((a == 0 & b != 0) | (a != 0 & b == 0)) {
+            try {
+                throw new ArithmeticException();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        if (a == 0 & b == 0) {
+            try {
+                throw new IllegalAccessException();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        if (a > 0 & b > 0) {
+            try {
+                throw new MyException("Помилка! числа не можуть бути більші за нуль");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return a * b;
+    }
+
+    public static int getMinus(int a, int b) {
+        if (a < 0 & b < 0) {
+            try {
+                throw new IllegalArgumentException();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        if ((a == 0 & b != 0) | (a != 0 & b == 0)) {
+            try {
+                throw new ArithmeticException();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        if (a == 0 & b == 0) {
+            try {
+                throw new IllegalAccessException();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        if (a > 0 & b > 0) {
+            try {
+                throw new MyException("Помилка! числа не можуть бути більші за нуль");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return a - b;
+    }
+
+    public static int getPlus(int a, int b) {
+        if (a < 0 & b < 0) {
+            try {
+                throw new IllegalArgumentException();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        if ((a == 0 & b != 0) | (a != 0 & b == 0)) {
+            try {
+                throw new ArithmeticException();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        if (a == 0 & b == 0) {
+            try {
+                throw new IllegalAccessException();
+            } catch (Exception e){}
+        }
+        if (a > 0 & b > 0) {
+            try {
+                throw new MyException("Помилка! числа не можуть бути більші за нуль");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return a + b;
+    }
+
+}
+
+
